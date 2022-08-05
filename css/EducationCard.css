@@ -1,0 +1,72 @@
+.box {
+  width: 800px;  
+  margin: 10% auto;
+  position: relative;
+}
+
+#tarjeta-container {
+  position: relative;
+  margin: 30px;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  float: left;
+  perspective: 1000px;
+}
+
+.tarjeta-img {
+  width: 75px;
+  height: 75px;
+}
+
+#tarjeta {
+  width: 100%;
+  height: 100%;
+  margin: 10%;
+  transform-style: preserve-3d;
+  transition: all .8s linear;
+  box-shadow: 5px 5px 15px rgba(0,0,0, .3);
+}
+
+#tarjeta:hover {
+  transform: rotateY(180deg);
+  box-shadow: -5px 5px 15px rgba(0,0,0, .3);
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  opacity: .7;
+  background: black;
+}
+
+h1, p {
+  font-family: 'Questrial', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 1.2em;
+  padding-top: 15px;
+  color: #EFB810;
+}
+
+p {
+  font-size: .5em;
+}
+
+.date {
+  color: #D0B2AF;
+}
+
